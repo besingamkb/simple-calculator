@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.e1231231.testandriodapp.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ansField"
+        android:layout_marginTop="14dp"
+        android:text="@string/clear" />
+
+    <Button
+        android:id="@+id/btnPlusMinus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btnClear"
+        android:layout_alignBottom="@+id/btnClear"
+        android:layout_toRightOf="@+id/btnClear"
+        android:text="@string/plusminus" />
+
+    <Button
+        android:id="@+id/btnDot"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btnPlusMinus"
+        android:layout_alignBottom="@+id/btnPlusMinus"
+        android:layout_toRightOf="@+id/btnPlusMinus"
+        android:text="@string/dot" />
+
+    <Button
+        android:id="@+id/btnDivide"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btnDot"
+        android:layout_toRightOf="@+id/btnDot"
+        android:text="@string/division" />
+
+    <Button
+        android:id="@+id/btnNum8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btnNum7"
+        android:layout_alignBottom="@+id/btnNum7"
+        android:layout_toRightOf="@+id/btnNum7"
+        android:text="@string/num8" />
+
+    <Button
+        android:id="@+id/btnNum7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnClear"
+        android:text="@string/num7" />
+
+    <Button
+        android:id="@+id/btnNum9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btnNum8"
+        android:layout_alignBottom="@+id/btnNum8"
+        android:layout_toLeftOf="@+id/btnDivide"
+        android:text="@string/num9" />
+
+    <Button
+        android:id="@+id/btnMultiply"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btnNum9"
+        android:layout_alignBottom="@+id/btnNum9"
+        android:layout_alignLeft="@+id/btnDivide"
+        android:text="@string/multiply" />
+
+    <Button
+        android:id="@+id/btnNum4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnNum8"
+        android:layout_toLeftOf="@+id/btnNum8"
+        android:text="@string/num4" />
+
+    <Button
+        android:id="@+id/btnNum5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btnNum4"
+        android:layout_alignBottom="@+id/btnNum4"
+        android:layout_toLeftOf="@+id/btnNum9"
+        android:text="@string/num5" />
+
+    <Button
+        android:id="@+id/btnNum6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btnNum5"
+        android:layout_toLeftOf="@+id/btnMultiply"
+        android:text="@string/num6" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btnMultiply"
+        android:layout_below="@+id/btnMultiply"
+        android:text="@string/substraction" />
+
+    <Button
+        android:id="@+id/btnNum1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnNum4"
+        android:text="@string/num1" />
+
+    <Button
+        android:id="@+id/btnNum2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btnNum1"
+        android:layout_alignBottom="@+id/btnNum1"
+        android:layout_toRightOf="@+id/btnNum1"
+        android:text="@string/num2" />
+
+    <Button
+        android:id="@+id/btnNum3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnNum6"
+        android:layout_toLeftOf="@+id/btnMinus"
+        android:text="@string/num3" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btnMinus"
+        android:layout_below="@+id/btnMinus"
+        android:text="@string/addition" />
+
+    <Button
+        android:id="@+id/btnNum0"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/btnNum2"
+        android:layout_below="@+id/btnNum1"
+        android:text="@string/num0" />
+
+    <Button
+        android:id="@+id/btnEquals"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/btnAdd"
+        android:layout_below="@+id/btnNum2"
+        android:layout_toRightOf="@+id/btnNum2"
+        android:text="@string/equals" />
+
+    <TextView
+        android:id="@+id/ansField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnDivide"
+        android:layout_marginTop="53dp"
+        android:gravity="right"
+        android:text=""
+        android:hint="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/calculator"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
